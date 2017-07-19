@@ -11,7 +11,6 @@ import com.imeepwni.beatbox.model.BeatBox
  */
 class BeatBoxViewModel : BaseObservable() {
 
-    // TODO getQualityString
     @Bindable
     fun getPlayRate(): String? {
         val playRate = (BeatBox.playRate * 100).toInt()
