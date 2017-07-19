@@ -2,6 +2,7 @@ package com.imeepwni.beatbox.viewmodel
 
 import android.databinding.BaseObservable
 import android.databinding.Bindable
+import com.imeepwni.beatbox.model.BeatBox
 import com.imeepwni.beatbox.model.Sound
 
 /**
@@ -19,6 +20,10 @@ class SoundViewModel(sound: Sound) : BaseObservable() {
     fun setSound(sound: Sound) {
         mSound = sound
         notifyChange()
+    }
+
+    fun ouButtonClicked() {
+        BeatBox.play(mSound)
     }
 
 }
